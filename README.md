@@ -25,6 +25,55 @@ Traditional textbooks are static. Intelligent textbooks adapt to learners, provi
 - **Generate content dynamically** using AI prompts and workflows
 - **Scale globally** using free, open-source tools
 
+## 🚀 Create Your Own Textbooks
+
+### Quick Start: Generate a New Textbook
+
+This repository includes scripts to rapidly create independent textbook repositories:
+
+```bash
+./scripts/create-textbook.sh biology-101 "Biology 101"
+```
+
+**What you get:**
+- ✅ Complete MkDocs site ready to deploy
+- ✅ Latest skills from [dmccreary/claude-skills](https://github.com/dmccreary/claude-skills)
+- ✅ Framework plugins and tools
+- ✅ Starter content structure
+- ✅ GitHub Actions for auto-deployment
+- ✅ Update scripts for staying current
+
+**Perfect for:**
+- Creating multiple textbooks with different collaborators
+- Each textbook as an independent repository
+- Working in Claude Code web interface (one textbook at a time)
+- Managing separate access control per textbook
+
+**📖 [Complete Guide: scripts/README.md](scripts/README.md)**
+
+### Architecture for Multiple Textbooks
+
+```
+dmccreary/intelligent-textbooks (upstream)
+           ↓ (fork)
+vishalsachdev/intelligent-textbooks (this repo - framework)
+           ↓ (scripts)
+    ┌──────┴──────┬─────────┐
+    ↓             ↓         ↓
+biology-101   chemistry   physics-101
+(your repo)   (your repo) (your repo)
+    ↓             ↓         ↓
+ (pulls skills from dmccreary/claude-skills)
+```
+
+**Each textbook:**
+- Independent GitHub repository
+- Own collaborators and permissions
+- Deploys to `yourname.github.io/textbook-name/`
+- Stays updated with simple sync scripts
+
+**See [scripts/README.md](scripts/README.md) for complete workflow documentation.**
+
 ## 🏗️ Architecture
 
 ### Core Technologies
