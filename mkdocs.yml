@@ -36,12 +36,13 @@ nav:
     - Hiding Content: tutorial/hiding-content.md
 
 
-  - Educational concepts:
+  - Educational Concepts:
     - Introduction: concepts/index.md
-    - Intelligence Levels: concepts/five-levels-of-intelligent-textbooks.md
+    - Five Levels of Intelligent Textbooks: concepts/five-levels-of-intelligent-textbooks.md
     - Bloom's Taxonomy: concepts/bloom-taxonomy.md
     - Scaffolding: concepts/scaffolding.md
     - Learning Graph: concepts/learning-graph.md
+    - Adaptive Assessments: concepts/adaptive-assessments.md
     - Best Practices: concepts/best-practices.md
     - Learning Theory: concepts/learning-theory.md
     - Levels of Interactivity: concepts/levels-of-interactivity.md
@@ -49,6 +50,7 @@ nav:
     - Open Educational Resources: concepts/open-educational-resources.md
     - Instructional Design: concepts/instructional-design.md
     - Levels of Interactivity: concepts/levels-of-interactivity-v1.md
+    - From Sage to Guide: concepts/from-sage-to-guide.md
     - Quality Metrics: concepts/quality-metrics.md
     - Book Metadata:
       - Book Metadata Intro: concepts/book-metadata/index.md
@@ -56,6 +58,10 @@ nav:
       - Book Metadata Summary: concepts/book-metadata/book-metadata-summary.md
       - Book Metadata Quickstart: concepts/book-metadata/book-metadata-quickstart.md
   
+  - Stories:
+    - Introduction: stories/index.md
+    - From Moldy Books to PhD: stories/hadi/index.md
+
   - Workflows:
     - Introduction: workflow/index.md
     - Course Description: workflow/course-description.md
@@ -76,22 +82,29 @@ nav:
   
   - MicroSims:
     - Introduction: sims/index.md
-    - High School Courses: sims/high-school-courses/index.md
     - Addie Workflow: sims/addie-workflow/index.md
-    - Book Levels: sims/book-levels/index.md
+    - AI Flywheel: sims/ai-flywheel/index.md
+    - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
     - Bloom's Taxonomy: sims/blooms-taxonomy/index.md
+    - Book Generation Workflow: sims/book-gen-workflow/index.md
+    - Book Levels: sims/book-levels/index.md
     - Cognitive Load: sims/cognitive-load/index.md
+    - High School Courses: sims/high-school-courses/index.md
+    - Implementation Decision Matrix: sims/implementation-matrix/index.md
     - Kemp Model: sims/kemp-model/index.md
     - Learning Graph: sims/learning-graph/index.md
     - Levels of Interactivity: sims/levels-of-interactivity/index.md
-    - Book Generation Workflow: sims/book-gen-workflow/index.md
-    - Word Cloud: sims/word-cloud/index.md
-    - Gallery: sims/index.md
+    - METR Task Horizon Growth: sims/metr-task-horizon/index.md
+    - Privacy Threshold Chart: sims/privacy-threshold-chart/index.md
+    - Question Color Update: sims/question-color-update/index.md
+    - SAE vs Textbook Levels: sims/sae-comparison/index.md
     - Sam Process: sims/sam-process/index.md
     - Sine Wave: sims/sine-wave/index.md
-    - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
-    - AI Flywheel: sims/ai-flywheel/index.md
+    - Standards Ecosystem: sims/standards-ecosystem/index.md
     - Terms to EKG: sims/terms-to-ekg/index.md
+    - Textbook Ecosystem CLD: sims/textbook-ecosystem-cld/index.md
+    - Three Color DFS: sims/three-color-dfs/index.md
+    - Word Cloud: sims/word-cloud/index.md
     - Templates: sims/templates/index.md
   
   - Case Studies:
@@ -188,10 +201,14 @@ markdown_extensions:
   - attr_list
   - pymdownx.highlight:
       linenums: true
+  - pymdownx.arithmatex:
+      generic: true
 extra_css:
    - css/extra.css
 extra_javascript:
     - js/extra.js
+    # needed for mathjax to work
+    - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 copyright: Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
 extra:
   generator: false
