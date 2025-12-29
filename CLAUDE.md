@@ -82,3 +82,48 @@ docs/sims/[name]/
 ## Python Environment
 
 The project uses conda for environment management rather than venv to support potential future multi-language dependencies. All Python utilities are in `src/` subdirectories with specific purposes (analytics, CSV processing, etc.).
+
+---
+
+## AI Assistant Guidelines
+
+### DO:
+- Help understand concepts and explain approaches
+- Review code structure and suggest improvements
+- Assist with debugging and error explanation
+- Help create MicroSims and explain p5.js concepts
+- Explain educational design patterns and Bloom's Taxonomy
+
+### DON'T:
+- Provide complete solutions to assignments
+- Write code that students should write themselves
+- Share answers to graded assessments
+
+---
+
+## Current Focus
+- [ ] Improve PDF-to-textbook extraction workflow (better LaTeX/math handling)
+
+## Roadmap
+- [x] Add AI Assistant Guidelines to CLAUDE.md
+- [x] Add roadmap pattern to CLAUDE.md
+- [x] Sync with upstream (dmccreary/intelligent-textbooks)
+- [x] Create CS229 ML textbook from PDF source
+- [ ] Improve PDF extraction for mathematical notation (marker-pdf or nougat-ocr)
+- [ ] Add MicroSims to CS229 textbook for key concepts (gradient descent, etc.)
+- [ ] Create reusable PDF-to-textbook workflow documentation
+
+## Session Log
+### 2025-12-27
+- Added AI Assistant Guidelines and roadmap sections
+
+### 2025-12-29
+- Synced intelligent-textbooks repo with upstream (31 commits pulled)
+- Added 3 new skills from upstream: concept-classifier, installer, microsim-utils
+- Created CS229 ML textbook at `/Users/vishal/teaching/cs229-ml/` from 227-page PDF
+  - Extracted 17 chapters using PyPDF2
+  - Created learning graph (120 concepts) and glossary (80+ terms)
+  - Set up MkDocs with Material theme
+- Attempted marker-pdf and nougat-ocr for better PDF extraction (aborted due to system restart)
+- Cleaned up marker/nougat files and caches (~1.5 GB freed)
+- Next: Improve PDF extraction workflow for better LaTeX/math handling
