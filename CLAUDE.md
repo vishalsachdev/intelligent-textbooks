@@ -114,9 +114,6 @@ The project uses conda for environment management rather than venv to support po
 - [ ] Create reusable PDF-to-textbook workflow documentation
 
 ## Session Log
-### 2025-12-27
-- Added AI Assistant Guidelines and roadmap sections
-
 ### 2025-12-29
 - Synced intelligent-textbooks repo with upstream (31 commits pulled)
 - Added 3 new skills from upstream: concept-classifier, installer, microsim-utils
